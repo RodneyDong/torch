@@ -14,7 +14,7 @@ Data-->Training--> input & output
 ## Load Stock Data
 
 * [Load stock data from internet](src/stock01.py)
-* [Plot, smooth and velocity(src/stock02.py)
+* [Plot, smooth and velocity](src/stock02.py)
 
 ## Stock Data Analysis
 *[Understand Bollinger band, MACD, Signal Lines](/src/stock03.py)
