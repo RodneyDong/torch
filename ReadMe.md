@@ -13,11 +13,11 @@ Data-->Training--> input & output
 
 ## Load Stock Data
 
-* [Load stock data from internet](../src/stock01.py)
-* [Plot, smooth and velocity](../src/stock02.py)
+* [Load stock data from internet](src/stock01.py)
+* [Plot, smooth and velocity(src/stock02.py)
 
 ## Stock Data Analysis
-*[Understand Bollinger band, MACD, Signal Lines](../src/stock03.py)
+*[Understand Bollinger band, MACD, Signal Lines](/src/stock03.py)
 ![alt text](image/macd.png)
 
 ## Two Models
@@ -27,12 +27,12 @@ Data-->Training--> input & output
 
 ## Data Process
 ### Smooth Data
-*[曲线平滑](../src/smooth.py)
+*[Curving Smoothing](/src/smooth.py)
 
 ### Classified Data Preparing
 Need to do this because we have to generate buy/sell output based on stock data
-* [Generate Data for Training ](../src/GenTrainingData.py)
-* [csv file generated for training](../stockdata/SPY_TrainingData_30_13.csv)
+* [Generate Data for Training ](/src/GenTrainingData.py)
+* [csv file generated for training](/stockdata/SPY_TrainingData_30_13.csv)
 ![alt text](image/genTrainData.png)
 ![](image/StockTrainModel.png)
 
@@ -48,8 +48,8 @@ window = 30 data points
 input : 30*6 = 180
 output : 2 (buy/sell)
 
-[Data Preparation](../src/GenTrainingData.py)
-[Generate Model](../src/stock04.py)
+[Data Preparation](/src/GenTrainingData.py)
+[Generate Model](/src/stock04.py)
 
 
 
@@ -60,7 +60,7 @@ output : 2 (buy/sell)
 ## Preparing Data
 ![alt text](image/ForecastModelling.png)
 
-[Get data from database](../src/GenTrainTestDataBig_fixlen_GRU_2.py)
+[Get data from database](/src/GenTrainTestDataBig_fixlen_GRU_2.py)
 1. Databased File: data/stock_bigdata_2019-2023.db
 2. outputs: data/SPX_TrainingData_FixLenGRU_120_604, SPX_TestingData_FixLenGRU_120_604, SPX_PredictData_FixLenGRU_120_604
 
@@ -94,12 +94,12 @@ Normalized data include velocuty, acceleration, and output
 ### Create a GRU model
 [GRU Model website](https://d2l.ai/chapter_recurrent-modern/gru.html)
 
-[Generate GRU Model and save to File](../src/Test_GRUX3_fixlen_01.py)
+[Generate GRU Model and save to File](/src/Test_GRUX3_fixlen_01.py)
 Output Model saved to: outputs/GRU_model_with_fixed_length_data_610.pth
 
 
 ### Forecast Future Stock Price Range
-[Forecast Future Stock Normalized Price Range](../src/Test_GRUX3_fixlen_01_predict.py)
+[Forecast Future Stock Normalized Price Range](/src/Test_GRUX3_fixlen_01_predict.py)
 
 ### Determine Accuracy
 [R Squared from CHATGPT](R2.md)
